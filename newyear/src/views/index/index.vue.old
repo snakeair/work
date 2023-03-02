@@ -1,0 +1,266 @@
+<template>
+  <div>
+
+    <!-- <div class="letter" :class="{cur: open}" >
+    <div class="letter-txt" ></div>
+    </div> -->
+
+    <div class="bg-wrapper" >
+      <div class="envelope-wrapper" v-show="show" :class="{ flap: open, rotate: rotate }" >
+        <div class="envelope"  >
+          <div class="card">
+            <span class="fa fa-close close-icon" @click="closeFn" >x</span>
+            <div class="text">Love.</div>
+          </div>
+        </div>
+        <div class="heart" @click="startFn" ></div>
+      </div>
+      <div class="rotate-box" v-show="!plan"  :class=" {show: rotate}"></div>
+      <div class="fly" :class="{ plane: plan }">
+        <i></i>
+        <i></i>
+      </div>
+
+    </div>
+
+
+    
+  </div>
+</template>
+
+<script setup lang="ts">
+const open = ref<boolean>(false);
+const rotate = ref<boolean>(false);
+const show = ref<boolean>(true)
+const startFn = () => {
+  open.value = true;
+}
+
+const closeFn = () => {
+  open.value = false;
+  let timer = setTimeout(() => {
+    rotate.value = true;
+    timer = setTimeout(() => {
+      show.value = false;
+      plan.value = true;
+    }, 1000);
+  }, 1500);
+}
+
+const plan = ref<boolean>(false);
+</script>
+
+<style scoped lang="scss" >
+// .letter{
+//   position: relative;
+//   width: 70vw; margin: 60vh auto 0; height:40vw;
+//   background:#D3EAFD;
+//   &:before{
+//     content: '';
+//     position: absolute;
+//     width: 0; left:0; top:0;   height: 0;
+//     border-top: 20vw solid skyblue;  border-right: 35vw solid transparent;  border-left: 35vw solid transparent;
+//     transition: all 0.5s ease-in-out 0.7s; transform-origin: top;
+//   }
+//   &.cur{
+//     &:before{
+//       transform: rotateX(180deg);
+//     }
+//   }
+// }
+
+.bg-wrapper {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #D46466;
+}
+.bg-wrapper .envelope-wrapper {
+  background: #B4D2EE;
+  width: 60vw;
+  height: 40vw;
+  transition: all 0.5s linear;
+  &.rotate {
+    transform: rotateY(90deg);
+  }
+}
+.bg-wrapper .envelope-wrapper .envelope {
+  position: relative;
+  width: 60vw;
+  height: 40vw;
+  
+  
+}
+.bg-wrapper .envelope-wrapper .envelope:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+  border-top: 25vw solid #D3EAFD;
+  border-right: 30vw solid transparent;
+  border-left: 30vw solid transparent;
+  transform-origin: top;
+  transition: all 0.5s ease-in-out 0.7s;
+}
+.bg-wrapper .envelope-wrapper .envelope:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 0px;
+  height: 0px;
+  border-top: 20vw solid transparent;
+  border-right: 30vw solid #B4D2EE;
+  border-bottom: 20vw solid #B4D2EE;
+  border-left: 30vw solid #B4D2EE;
+}
+.bg-wrapper .envelope-wrapper .envelope .card {
+  position: absolute;
+  right: 20%;
+  bottom: 0;
+  width: 60%;
+  height: 90%;
+  background: #FFF;
+  text-align: center;
+  transition: all 1s ease-in-out;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.bg-wrapper .envelope-wrapper .envelope .card .close-icon {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 10px;
+  color: rgba(68, 68, 68, 0.7);
+  cursor: pointer;
+}
+.bg-wrapper .envelope-wrapper .envelope .card .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "Great Vibes", cursive;
+  color: #C51803;
+  transform: translate(-50%, -50%);
+}
+.bg-wrapper .envelope-wrapper .heart {
+  position: absolute;
+  top: 49%; left: 50%; width: 15px; height: 15px; z-index: 4; border-radius: 50%;
+  background: #C51803;
+  transform: translate(-50%, -20%) rotate(45deg);
+  transition: transform 0.5s ease-in-out 1s;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+
+.bg-wrapper .flap .envelope:before {
+  transform: rotateX(180deg);
+  z-index: 0;
+}
+.bg-wrapper .flap .envelope .card {
+  bottom: 100px;
+  transform: scale(1.5);
+  transition-delay: 1s;
+}
+
+
+.rotate-box{
+  position: absolute;
+    width: 60vw;
+    height: 40vw;
+    background: #eee;
+    transform: rotateY(90deg);
+    transition: all 0.5s linear 0.5s;
+    &.show {
+      transform: rotateY(180deg);
+    }
+}
+
+.fly {  
+  position: absolute;
+  width: 60vw;
+  height: 40vw;
+}
+
+.plane {
+  width:60vw;
+  height:40vw;
+  display:grid;
+  transform-style:preserve-3d;
+  transform:rotateX(0deg) rotate(0deg);
+  animation:n4 2.2s linear both 3s;
+  background-color: rgba($color: #fff, $alpha: 0);
+  &:before,
+  &:after {
+    content: "";
+    grid-area: 1/1;
+    transform-origin: inherit;
+    background: #eee;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    animation: n1 1s linear forwards 1s;
+  }
+  &:after {
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    grid-area: 1/2;
+  }
+  i {
+    display: inherit;
+    grid-area: 1/1;
+    animation: n2 1s linear both 2s;
+    transform-style: preserve-3d;
+    &:first-child {
+      transform: rotate(-20deg);
+      transform-origin: 100% 0;
+    }
+    &:first-child:after {
+      background: #eee;
+      clip-path: polygon(100% 0, 0 100%, 50% 100%);
+    }
+    &:first-child:before {
+      background: #aaa;
+      clip-path: polygon(100% 0, 50% 100%, 100% 100%);
+      transform: rotate3d(-11, 26, 0, 83deg);
+      animation: n3 1s linear both 2s;
+    }
+    &:last-child {
+      transform: rotate(20deg);
+      transform-origin: 0 0;
+    }
+    &:last-child:after {
+      background: #eee;
+      clip-path: polygon(0 0, 100% 100%, 50% 100%);
+    }
+    &:last-child:before {
+      background: #bbb;
+      clip-path: polygon(0 0, 50% 100%, 0 100%);
+      transform: rotate3d(-11, -26, 0, 83deg);
+      animation: n33 1s linear both 2s;
+    }
+    &:last-child {
+      grid-area: 1/2;
+    }
+  }
+  *:before,
+  *:after {
+    content: "";
+    grid-area: 1/1;
+    transform-origin: inherit;
+  }
+}
+  
+@keyframes n1 {
+  to{opacity:0;transform:translateY(-50px)}
+}
+@keyframes n2 {
+  from{transform:rotate(0deg)}
+}
+@keyframes n3 {
+  from{transform:rotate3d(-11, 26, 0, 0deg);background:#eee}
+}
+@keyframes n33 {
+  from{transform:rotate3d(-11, -26, 0, 0deg);background:#eee}
+}
+@keyframes n4 {
+  40%,60%{transform:rotateX(71deg) rotate(20deg) translate(0)}
+  100%{transform:rotateX(71deg) rotate(20deg) translateY(-4000px)}
+}
+</style>

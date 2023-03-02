@@ -1,0 +1,1 @@
+import{z as t,s as e}from"../default/default-5704fa67.js";const a=(a,o)=>new Promise(((s,p)=>{t.post(`http://prd.11271.top${a}`,o,{headers:{"Content-Type":"multipart/form-data","X-Token":e.get("token")}}).then((t=>{s(t.data)}))}));export{a as $};

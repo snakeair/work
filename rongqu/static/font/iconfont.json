@@ -1,0 +1,240 @@
+{
+  "id": "3722697",
+  "name": "icons",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "630085",
+      "name": "向上箭头",
+      "font_class": "xiangshangjiantou",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "630092",
+      "name": "向下箭头",
+      "font_class": "xiangxiajiantou",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "630094",
+      "name": "向右箭头",
+      "font_class": "xiangyoujiantou",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "630095",
+      "name": "向左箭头",
+      "font_class": "xiangzuojiantou",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "2076188",
+      "name": " 关闭箭头",
+      "font_class": "guanbi1",
+      "unicode": "e86d",
+      "unicode_decimal": 59501
+    },
+    {
+      "icon_id": "5387930",
+      "name": "箭头_页面_向上_o",
+      "font_class": "jiantou_xiangshang",
+      "unicode": "eb93",
+      "unicode_decimal": 60307
+    },
+    {
+      "icon_id": "5387932",
+      "name": "箭头_页面_向右_o",
+      "font_class": "jiantou_xiangyou",
+      "unicode": "eb94",
+      "unicode_decimal": 60308
+    },
+    {
+      "icon_id": "5387935",
+      "name": "箭头_页面_向左_o",
+      "font_class": "jiantou_xiangzuo",
+      "unicode": "eb95",
+      "unicode_decimal": 60309
+    },
+    {
+      "icon_id": "5387938",
+      "name": "箭头_页面_向下_o",
+      "font_class": "jiantou_xiangxia",
+      "unicode": "eb96",
+      "unicode_decimal": 60310
+    },
+    {
+      "icon_id": "32440029",
+      "name": "开发者中心",
+      "font_class": "kaifa",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "32440031",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "32440032",
+      "name": "账单",
+      "font_class": "zhangdan",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "32348307",
+      "name": "服务商-充值",
+      "font_class": "chongzhi",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "32348308",
+      "name": "其他-花名册",
+      "font_class": "huamingce",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "32348309",
+      "name": "其他-关闭代招",
+      "font_class": "shanchu",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "32348310",
+      "name": "服务商-结算",
+      "font_class": "jiesuan",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "32348311",
+      "name": "其他-企业账户",
+      "font_class": "qiyezhanghu",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "32348312",
+      "name": "其他-设置",
+      "font_class": "shezhi",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "32348313",
+      "name": "其他-流水",
+      "font_class": "liushui",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "32348315",
+      "name": "其他-统计",
+      "font_class": "tongji",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "32348316",
+      "name": "招聘-反馈",
+      "font_class": "fankui",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "32348318",
+      "name": "其他-企业详情",
+      "font_class": "xiangqing",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "32348319",
+      "name": "招聘-余额",
+      "font_class": "yu-e",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "32348321",
+      "name": "其他-消息",
+      "font_class": "xiaoxi",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "32348322",
+      "name": "招聘-帮助",
+      "font_class": "bangzhu",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "32348324",
+      "name": "招聘-企业认证",
+      "font_class": "renzheng",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "32348325",
+      "name": "众包-合规",
+      "font_class": "hegui",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "32348329",
+      "name": "众包-实名",
+      "font_class": "shiming",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "32348330",
+      "name": "众包-数据",
+      "font_class": "shuju",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "32348333",
+      "name": "众包-任务",
+      "font_class": "renwu",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "32348334",
+      "name": "招聘-企业资料",
+      "font_class": "geren",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "32348340",
+      "name": "众包-钱包",
+      "font_class": "qianbao",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "32348341",
+      "name": "服务商-分润",
+      "font_class": "bufen",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    }
+  ]
+}

@@ -1,0 +1,469 @@
+@charset "UTF-8";
+/*font-size*/
+/*webcolor*/
+/*color*/
+/**
+  *
+  * #333 = b -> 20% #666 -> 40% , #999 -> 60% ,  #ccc -> 80% , #ddd -> 87% ， #eee -> 93%
+  *         以上为常用灰色灰度百分比，酌情使用
+  */
+/**
+ *
+ * 使用  @extend  引入
+ * placeholder code
+ *
+ */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.box {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/**
+ *
+ * function code
+ * 使用 @include 引入
+ *
+ */
+/**
+ * [arrow_askew border三角]
+ * @param  {[type]} $direction [方向]
+ * @param  {[type]} $size      [大小]
+ * @param  {[type]} $color     [颜色]
+ * @return {[type]}            []
+ */
+/**
+ * [css_arrow css3尖角]
+ * @param  {[type]} $height&$width [尖角的长宽]
+ * @param  {[type]} $color         [背景色]
+ * @param  {[type]} $size          [变形的数值]
+ * @return {[type]}     这个使用的是css3的transform和after制作的尖角，可以不是正方形角
+ * 如果需要加上border的话需要在外面添加，但是主要border的宽度
+ */
+/** 
+    网格布局函数，由于书写方式过多，所以由多个函数组成，根据需要使用
+**/
+/** 子模块固定宽度，容器大小随机  **/
+/** 设定容器子元素的长宽 -- start **/
+/**列数**/
+/**行数**/
+/** 设定容器子元素的长宽 -- end **/
+/** 设置子元素的间距 **/
+/** 布局方式 **/
+/** 子元素位置设置， 这个会改变布局，慎用 **/
+/**
+* $size / 39 39是设计稿的尺寸 / 10 的得数
+**/
+@font-face {
+  font-family: "iconfont";
+  /* Project id 3823927 */
+  src: url("@/assets/fonts/iconfont.woff2?t=1670914937485") format("woff2"), url("@/assets/fonts/iconfont.woff?t=1670914937485") format("woff"), url("@/assets/fonts/iconfont.ttf?t=1670914937485") format("truetype"), url("@/assets/fonts/iconfont.svg?t=1670914937485#iconfont") format("svg");
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-jinggao02:before {
+  content: "\e601";
+}
+
+.icon-jinggao01:before {
+  content: "\ec72";
+}
+
+.icon-dui3:before {
+  content: "\e63d";
+}
+
+.icon-dui2:before {
+  content: "\e657";
+}
+
+.icon-xiazai1:before {
+  content: "\e606";
+}
+
+.icon-delete1:before {
+  content: "\e621";
+}
+
+.icon-xinxi1:before {
+  content: "\e622";
+}
+
+.icon-jia1:before {
+  content: "\e623";
+}
+
+.icon-gongju:before {
+  content: "\e63c";
+}
+
+.icon-xiangshang-two:before {
+  content: "\eb93";
+}
+
+.icon-xiangyou-two:before {
+  content: "\eb94";
+}
+
+.icon-xiangzuo-two:before {
+  content: "\eb95";
+}
+
+.icon-xiangxia-two:before {
+  content: "\eb96";
+}
+
+.icon-sousuo:before {
+  content: "\e620";
+}
+
+.icon-dui:before {
+  content: "\e715";
+}
+
+.icon-xiazai2:before {
+  content: "\e668";
+}
+
+.icon-jia2:before {
+  content: "\e60d";
+}
+
+.icon-xiangshang:before {
+  content: "\e62c";
+}
+
+.icon-xiangyou:before {
+  content: "\e62d";
+}
+
+.icon-xiangxia:before {
+  content: "\e62e";
+}
+
+.icon-Close:before {
+  content: "\e609";
+}
+
+.icon-close2:before {
+  content: "\e60a";
+}
+
+.icon-close22:before {
+  content: "\e60b";
+}
+
+.icon-jian1:before {
+  content: "\e60c";
+}
+
+.icon-jia22:before {
+  content: "\e60e";
+}
+
+.icon-home:before {
+  content: "\e610";
+}
+
+.icon-delete2:before {
+  content: "\e611";
+}
+
+.icon-Email:before {
+  content: "\e612";
+}
+
+.icon-Edit1:before {
+  content: "\e613";
+}
+
+.icon-jian11:before {
+  content: "\e614";
+}
+
+.icon-home11:before {
+  content: "\e615";
+}
+
+.icon-xinxi22:before {
+  content: "\e616";
+}
+
+.icon-xinxi2:before {
+  content: "\e617";
+}
+
+.icon-More:before {
+  content: "\e618";
+}
+
+.icon-Star1:before {
+  content: "\e619";
+}
+
+.icon-search:before {
+  content: "\e61a";
+}
+
+.icon-Refresh:before {
+  content: "\e61b";
+}
+
+.icon-User:before {
+  content: "\e61c";
+}
+
+.icon-Star11:before {
+  content: "\e61d";
+}
+
+.icon-set1:before {
+  content: "\e61e";
+}
+
+.icon-Set11:before {
+  content: "\e61f";
+}
+
+.icon-xiangzuo:before {
+  content: "\e669";
+}
+
+body {
+  min-height: 100vh;
+}
+
+*[btn],
+.btn {
+  cursor: pointer;
+}
+
+td,
+th {
+  text-align: center;
+}
+
+.cloud {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.ovh {
+  overflow: hidden;
+}
+
+.shadow, .common-layer {
+  box-shadow: 0 0 8px rgba(149, 171, 204, 0.35);
+}
+
+.radius {
+  border-radius: 4px;
+}
+
+.common-layer {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 110;
+  transform: translate(-50%, -50%);
+}
+
+.common_blue {
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 12px;
+  color: #2c71ff;
+}
+.common_blue:hover {
+  color: #0051f8;
+}
+
+.common_red {
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 12px;
+  color: #C80D0A;
+}
+.common_red:hover {
+  color: #970a08;
+}
+
+.common-link {
+  display: inline-block;
+  padding: 8px 12px;
+  line-height: 1;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #2c71ff;
+}
+.common-link:hover {
+  color: #0040c5;
+}
+
+.common-checkbox .input {
+  display: none;
+}
+.common-checkbox .label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  background-color: #fff;
+}
+.common-checkbox .label::before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  width: 8px;
+  height: 4px;
+  top: 3px;
+  left: 2px;
+  border: 2px solid #C80D0A;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+  opacity: 0;
+}
+.common-checkbox .input:checked + .label {
+  background: #fff;
+  border-color: #C80D0A;
+}
+.common-checkbox .input:checked + .label::before {
+  opacity: 1;
+  transform: all 0.5s;
+}
+
+.common-checkbox-bun .input {
+  display: none;
+}
+.common-checkbox-bun .label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  border: 1px solid #999;
+  background-color: #fff;
+}
+.common-checkbox-bun .label::before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 3px;
+  left: 3px;
+  border-radius: 50%;
+  opacity: 0;
+  background-color: gray;
+}
+.common-checkbox-bun .input:checked + .label {
+  background: #fff;
+}
+.common-checkbox-bun .input:checked + .label::before {
+  opacity: 1;
+  transform: all 0.5s;
+}
+
+.common-checkbox-txt {
+  display: block;
+  cursor: pointer;
+}
+.common-checkbox-txt .input {
+  position: absolute;
+  z-index: -100;
+  width: 0;
+  height: 0;
+  left: -9999px;
+}
+
+.layer {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  border-radius: 15px;
+  z-index: 110;
+  background-color: #fff;
+  transform: translate(-50%, -70%);
+}
+.layer .layer-close {
+  position: absolute;
+  text-align: center;
+  bottom: calc(2.3076923077rem * -1);
+  width: 1.2820512821rem;
+  height: 1.2820512821rem;
+  border-radius: 50%;
+  left: 50%;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.5);
+  transform: translateX(-50%);
+}
+.layer .layer-close .iconfont {
+  font-weight: bold;
+  display: block;
+  line-height: 1.2820512821rem;
+  font-size: 1.0256410256rem;
+  height: 1.2820512821rem;
+  width: 1.2820512821rem;
+}
+
+/**
+* 项目独有的页面公共样式
+*
+**/
+.common-pages {
+  box-sizing: border-box;
+  overflow-y: auto;
+  position: relative;
+  height: 100vh;
+  background: url("/src/assets/images/bg-01.png") no-repeat top center;
+  background-size: 100vw 100vh;
+}
+
+.common-logo {
+  position: absolute;
+  width: 2.2564102564rem;
+  height: 1.0769230769rem;
+  top: 0.4615384615rem;
+  left: 0.5641025641rem;
+  z-index: 1;
+  background: url("/src/assets/images/logo.png") no-repeat center;
+  background-size: 100% 100%;
+}
+
+.common-btn {
+  width: 6.358974359rem;
+  height: 1.3076923077rem;
+  line-height: 1.1794871795rem;
+  text-align: center;
+  font-size: 0.4615384615rem;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto 0;
+  background: url("/src/assets/images/bg-05.png") no-repeat center;
+  background-size: 100%;
+  color: #fff;
+}
